@@ -1,0 +1,12 @@
+{
+  "name": "introwebdesdev",
+  "version": "1.0.0",
+  "description": "LinkedIn Learning Course Titled Introduction to Web Design and Development. This course is part of the Become an Ethical Hacker track.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["HTML", "CSS", "JavaScript", "Web Design", "WebDev", "Web Development"],
+  "author": "Adam Rhys Heaton",
+  "license": "ISC"
+}
