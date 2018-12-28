@@ -1,1 +1,1 @@
-# LinkedIn Repository, this repo is for project completed throught LinkedIn Learning
+# This repository is for project completed throught LinkedIn Learning
