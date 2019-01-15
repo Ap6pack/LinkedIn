@@ -2,4 +2,4 @@ open mirrors.xmission.com
 user anonymous nothinghere
 ascii
 cd gutenberg
-get GUTINDEX.00
+get GUTINDEX.2019
