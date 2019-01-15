@@ -17,6 +17,17 @@ none=$(tput sgr0)
 today=$(date +"%d-%m-%Y")
 time=$(date +"%H:%M:%S")
 
+# variables for arrays
+aa=()
+ba=("apple" "banana" "cherry")
+ba[5]="kiwi" # place value in a particular position
+ba+=("mango") # append the arrays
+
+# variables for declaring an arrays
+declare -A myarray
+myarray[color]=blue
+myarray["office building"]="HQ West"
+
 echo $a # prints a variable
 echo $b # prints a string
 echo $c # prints an integer
@@ -31,3 +42,9 @@ echo $f # prints green text in a red field
 echo -e $none$green"Green on Red -- "$flash"Merry Christmas!"$none # flashes green text in a red field "works in XTerm"
 
 printf "Current User:\t%s\nDate:\t\t%s @ %s\n" $USER $today $time # prints current user and date/time
+
+echo ${ba[2]} # prints cherry
+echo ${ba[@]} # prints the complete array
+echo ${ba[@]: -1} # prints last element in the array
+
+echo ${myarray["office building"]} is ${myarray[color]} # prints declared array
