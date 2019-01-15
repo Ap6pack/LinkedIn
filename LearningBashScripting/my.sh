@@ -13,6 +13,10 @@ flash=$(tput setab 1; tput setaf 2; tput blink)
 green=$(tput setab 1; tput setaf 2)
 none=$(tput sgr0)
 
+# variables for date/time
+today=$(date +"%d-%m-%Y")
+time=$(date +"%H:%M:%S")
+
 echo $a # prints a variable
 echo $b # prints a string
 echo $c # prints an integer
@@ -21,6 +25,9 @@ echo $d # prints the working directory
 echo "$b! I have $c apples." # prints a string with variables inclued
 
 echo "The ping was $e" # prints a response from a server
+
 echo $f # prints green text in a red field
 
 echo -e $none$green"Green on Red -- "$flash"Merry Christmas!"$none # flashes green text in a red field "works in XTerm"
+
+printf "Current User:\t%s\nDate:\t\t%s @ %s\n" $USER $today $time # prints current user and date/time
