@@ -12,7 +12,7 @@ fi
 
 # if statement
 
-b="This is my string!" # string for comparison
+b="This is my string!" # string for comparison "add or remove an interger to test"
 
 if [[ $b =~ [0-9]+ ]]; then # if the string has an interger in it
     echo "There are numbers in the string: $b" # then echo
