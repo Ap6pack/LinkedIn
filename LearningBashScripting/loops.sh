@@ -93,7 +93,7 @@ do
     echo #i # echo contents
 done
 
-# case loops
+# case loop
 
 a="cat" # change to test the loop
 case $a in
@@ -101,3 +101,24 @@ case $a in
     dog|puppy) echo "Canine";; # testing for dog | is to specify a list of things to match
     *) echo "No natch!";; # all other variables
 esac
+
+# function loop
+
+function greet {
+    echo"Hello, $1 What a nice $2!"
+}
+echo "And now, greeting!"
+greet Adam Morning # argument 1
+greet Everybody Evening # argument 2
+
+# function loop
+numbering pine birch maple spruce # items
+function numbering { # assigns a number to items
+    i=1
+    for f in $@; do
+        echo $i: $f
+        ((i+=1))
+    done
+}
+
+numbering ($ls) # lists folder contents
