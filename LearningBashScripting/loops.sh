@@ -35,7 +35,7 @@ done
 j=0
 # loop thought until count is >= 10
 
-until [$j -ge 10 ]; do
+until [ $j -ge 10 ]; do
     echo j:$j # echo count
     ((j+=1))
 done
@@ -71,33 +71,33 @@ done
 # for loop array
 
 arr=("apple" "banana" "cherry")
-for i in {$arr[@]} #loop thought array
+for i in ${arr[@]} #loop thought array
 do
     echo $i # echo array
 done
 
 # for loop decalare array
 
-declare -A arr
-arr=["name"]="Adam"
-arr=["id"]="1234"
-for i in ${!arr[@]} #loop thought array
+declare -A array
+array["name"]="Adam"
+array["id"]="1234"
+for i in "${!array[@]}" #loop thought array
 do
-    echo "$i: ${!arr[@]}" # echo array
+    echo "$i: ${array[$i]}" # echo array
 done
 
 # for loop list folder contents
 
 for i in $(ls)
 do
-    echo #i # echo contents
+    echo $i # echo contents
 done
 
 # case loop
 
 a="cat" # change to test the loop
 case $a in
-    cat) echo "Fline";; # testing for cat
+    cat) echo "Feline";; # testing for cat
     dog|puppy) echo "Canine";; # testing for dog | is to specify a list of things to match
     *) echo "No natch!";; # all other variables
 esac
@@ -105,14 +105,14 @@ esac
 # function loop
 
 function greet {
-    echo"Hello, $1 What a nice $2!"
+    echo "Hello, $1 What a nice $2!"
 }
 echo "And now, greeting!"
 greet Adam Morning # argument 1
 greet Everybody Evening # argument 2
 
 # function loop
-numbering pine birch maple spruce # items
+
 function numbering { # assigns a number to items
     i=1
     for f in $@; do
@@ -121,4 +121,5 @@ function numbering { # assigns a number to items
     done
 }
 
-numbering ($ls) # lists folder contents
+numbering $(ls) # lists folder contents
+numbering pine birch maple spruce # items
