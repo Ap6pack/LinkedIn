@@ -66,4 +66,4 @@ echo ${ba[@]: -1} # prints last element in the array
 
 echo ${myarray["office building"]} is ${myarray[color]} # prints declared array
 
-ls
+ls # lists contents of the folder
