@@ -20,5 +20,20 @@ else
     echo "There are no numbers in the string: $b" # eles echo
 fi
 
+# while loop
+i=0
+# loop thought while count is <= 10
 
+while [ $i -le 10 ]; do
+    echo i:$i # echo count
+    ((i+=1))
+done
 
+# until loop
+j=0
+# loop thought until count is >= 10
+
+until [$j -ge 10 ]; do
+    echo j:$j # echo count
+    ((j+=1))
+done
