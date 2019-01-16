@@ -93,4 +93,11 @@ do
     echo #i # echo contents
 done
 
+# case loops
 
+a="cat" # change to test the loop
+case $a in
+    cat) echo "Fline";; # testing for cat
+    dog|puppy) echo "Canine";; # testing for dog | is to specify a list of things to match
+    *) echo "No natch!";; # all other variables
+esac
