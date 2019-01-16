@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 pftp -n <<- file
     open mirrors.xmission.com
     user anonymous nothinghere
