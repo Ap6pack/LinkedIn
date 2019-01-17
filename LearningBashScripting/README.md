@@ -1,8 +1,6 @@
-# Learning Objectives
+# Learning Bash Scripting
 
-Link to lesson on Linkedin Learning:
-
-<https://www.linkedin.com/learning/learning-bash-scripting>
+## Learning Objectives
 
 1. What is Bash?
 2. Managing output with grep, awk, and cut
@@ -15,3 +13,7 @@ Link to lesson on Linkedin Learning:
 9. Using functions
 10. Getting user input during execution
 11. Ensuring a response
+
+Link to lesson on Linkedin Learning:
+
+<https://www.linkedin.com/learning/learning-bash-scripting>
