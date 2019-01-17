@@ -61,3 +61,37 @@ do
         *) echo "I am not sure what that is.";; # catch all
     esac
 done
+
+
+if [ $# -lt 3 ]; then
+    cat <<- EOM
+    This command requires three arguments:
+    username, userid and favorite number.
+EOM
+
+else
+
+    # the program goes here
+    echo "UserName: $1"
+    echo "UserID: $2"
+    echo "Favorite Number: $3"
+fi
+
+# loop that requires user input using the -z flag to verify the case is not emtpy
+
+read -p "Favorite animal [cat]? " a #asumed anwser in brackets if users presses enter
+while [[ -z "$a" ]]; do
+    a="cat"
+    
+done
+
+echo "$a was selected."
+
+# validation using regular expressions
+
+read -p "What is the current year? [nnnn] " a
+while [[ ! $a =~ ^[0-9]{4}$ ]]; do # validating a interger 4 digits in length
+    read -p "A year, please! [nnnn] " a
+done
+
+echo "The current year is: $a"
