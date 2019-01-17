@@ -2,10 +2,6 @@
 
 ## Learning Objectives
 
-Link to lesson on Linkedin Learning:
-
-<https://www.linkedin.com/learning/introduction-to-web-design-and-development/welcome>
-
 1. What is web design?
 2. What is a web designer?
 3. Learning to code
@@ -15,3 +11,7 @@ Link to lesson on Linkedin Learning:
 7. Choosing your framework or software
 8. Designing with standards and accessibility in mind
 9. Learning HTML, CSS, and JavaScript
+
+Link to lesson on Linkedin Learning:
+
+<https://www.linkedin.com/learning/introduction-to-web-design-and-development/welcome>
