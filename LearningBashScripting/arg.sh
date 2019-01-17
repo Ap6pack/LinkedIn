@@ -33,3 +33,31 @@ while getopts :u:p:ab option; do # a leading colons are check flags that have no
 done
 
 echo "User: $user / Pass: $pass"
+
+# this examples requests input from the user
+
+echo "What is your name?"
+read name
+
+echo "What is your password?"
+read -s pass # -s hides users input
+
+read -p "What is your favorite animal? " animal # -p promts the user
+
+echo  name: $name. pass: $pass, animal: $animal #prints all inputs
+
+select animal in "cat" "dog" "bird" "fish" # number list for user to select from
+do
+    echo "You selected $animal!" # user promt
+    break
+done
+
+select option in "cat" "dog" "quit" # number list for user to select from
+do
+    case $option in # case statemts 
+        cat) echo "Cats like to sleep.";;
+        dog) echo "Dogs like to play fetch";;
+        quit) break;;
+        *) echo "I am not sure what that is.";; # catch all
+    esac
+done
